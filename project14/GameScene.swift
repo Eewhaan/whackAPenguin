@@ -137,6 +137,10 @@ class GameScene: SKScene {
     }
     
     func newGame(action: UIAlertAction) {
+        popUpTime = 0.85
+        for slot in slots {
+            slot.show(hideTime: popUpTime)
+        }
         score = 0
         roundCounter = 0
         
